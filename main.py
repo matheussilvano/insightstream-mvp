@@ -32,9 +32,9 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# --- CONFIGURAÇÃO DO CORS --- <<< ADICIONADO AQUI
 origins = [
-    "http://localhost:3000",  # O endereço do seu front-end Next.js
+    "http://localhost:3000",
+    "https://insightstream-frontend-git-main-matheussilvanos-projects.vercel.app"
 ]
 
 app.add_middleware(
